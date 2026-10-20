@@ -85,9 +85,6 @@ return {
 					vim.keymap.set("n", "gl", function()
 						vim.diagnostic.open_float({ border = "rounded", scope = "line" })
 					end, { buffer = bufnr, desc = "Show Line Error Explanation" })
-
-					vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
-					vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
 				end,
 			})
 
