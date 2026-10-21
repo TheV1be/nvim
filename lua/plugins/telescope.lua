@@ -2,7 +2,6 @@ return {
 	"nvim-telescope/telescope.nvim",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		-- Highly recommended: improves sorting performance drastically
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
 	},
@@ -32,9 +31,7 @@ return {
 			},
 			pickers = {
 				find_files = {
-					-- hidden = true will show .env, .gitignore, etc.
 					hidden = true,
-					-- previewer = false, -- uncomment to turn off preview for file searching
 				},
 			},
 		})
