@@ -32,6 +32,7 @@ return {
 					"clangd",
 					"lua_ls",
 					"jdtls",
+					"ts_ls",
 				},
 				-- Automatically activates vim.lsp.enable() for installed servers
 				-- but skips jdtls so nvim-jdtls can handle it via FileType instead.

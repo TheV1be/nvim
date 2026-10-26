@@ -44,8 +44,11 @@ set.wrap = false
 set.scrolloff = 10
 set.sidescrolloff = 10
 
--- permanent 1-row blank margin right above your code files
-vim.opt.winbar = " "
+-- permanent 1-row blank margin right above code files
+set.winbar = " "
+
+-- floating window colors
+set.termguicolors = true
 
 -- force floating windows to have clean, high-contrast aesthetics
 vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" }) -- Syncs background directly to editor canvas
